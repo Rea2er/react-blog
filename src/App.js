@@ -1,15 +1,17 @@
 import React from "react";
+import { Provider } from "react-redux";
 
 import Header from "./components/header";
 import GlobalStyle from "./style";
+import store from "./store";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Provider store={store}>
       <GlobalStyle />
       <Header />
-    </div>
+    </Provider>
   );
-}
+};
 
 export default App;
