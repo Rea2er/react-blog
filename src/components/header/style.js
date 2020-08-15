@@ -44,6 +44,7 @@ export const NavItem = styled.div`
     color: #ea6f5a;
   }
 `;
+
 export const NavSearch = styled.input.attrs({
   placeholder: "搜索",
 })`
@@ -65,6 +66,7 @@ export const NavSearch = styled.input.attrs({
   &.focused {
     width: 240px;
   }
+
   &.slide-enter {
     transition: all 0.2s ease-out;
   }
@@ -101,5 +103,23 @@ export const Button = styled.div`
   &.write {
     color: #fff;
     background: #ec6149;
+  }
+`;
+
+export const SearchWrapper = styled.div`
+  float: left;
+  position: relative;
+  .zoom {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    &.focused {
+      background: #777;
+      color: #fff;
+    }
   }
 `;
